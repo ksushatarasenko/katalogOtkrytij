@@ -57,6 +57,7 @@
   align-items: center;
   justify-content: flex-start;
   min-height: 180px;
+  width: 100%;
       
     }
 
@@ -170,4 +171,107 @@ ol li, ul li {
 .back:hover{
   transform: scale(1.3);
   color: #c0b302;
+}
+
+/* 📱 МОБИЛЬНАЯ АДАПТАЦИЯ */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 17px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  /* 📦 Сетка */
+  .container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  /* 🟩 Карточки */
+  .card {
+    font-size: 18px;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+
+  .emoji {
+    font-size: 30px;
+  }
+
+  .imgIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* 📋 Списки */
+  ul, ol {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  ol li, ul li {
+    font-size: 16px;
+    margin-left: 5%;
+  }
+
+  /* 🎥 Видео */
+  .video {
+    width: 100%;
+  }
+
+  .video iframe {
+    height: 200px;
+  }
+
+  /* 📄 Текст */
+  .textBlock {
+    padding: 15px;
+  }
+
+  .textBlock p {
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  .textBlock .p22 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  /* 🔘 Кнопка */
+  .back {
+    font-size: 18px;
+  }
+
+  /* 📐 Flex блоки */
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
 }
