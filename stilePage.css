@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fff9c4);
+}
+
+/* Заголовки */
+h1 {
+  text-align: center;
+  padding: 20px;
+  color: #2e7d32;
+  font-size: 32px;
+}
+
+h3 {
+  color: #6a1b9a;
+  text-align: center;
+  font-size: 28px;
+}
+h4 {
+  color: #ad4b0a;
+  text-align: center;
+  font-size: 26px;
+}
+h5 {
+  color: #1b9a2e;
+  text-align: center;
+  font-size: 24px;
+}
+h6 {
+  color: #9a1b6b;
+  text-align: center;
+  font-size: 22px;
+}
+
+/* Контейнер */
+.container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Блок с картинкой и текстом */
+.two {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  gap: 20px;
+  justify-content:  space-around;
+}
+
+/* Карточки текста */
+.text {
+  background: #f1f8e9;
+  padding: 15px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+
+/* Списки */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Картинки */
+.image {
+  max-width: 100%;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Картинки */
+.mgIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.mgIcon img {
+  width: 100%;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Анимация при наведении */
+.image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Галерея */
+.flex {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.flex .image {
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Кнопка назад */
+.back {
+  display: block;
+  text-align: center;
+  margin: 30px auto 50px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(45deg, #66bb6a, #43a047);
+  padding: 12px 25px;
+  border-radius: 30px;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.back:hover {
+  transform: scale(1.15);
+  background: linear-gradient(45deg, #81c784, #2e7d32);
+}
+
+/* Эмодзи немного увеличим */
+h1, h3 {
+  letter-spacing: 1px;
+}
+
+/* Адаптив */
+@media (max-width: 700px) {
+  .two {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+
+/* КАРУСЕЛЬ */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.carousel img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+/* КНОПКИ */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ffffffcc;
+  border: none;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+  z-index: 10;
+}
+
+.next {
+  right: 10px;
+  z-index: 10;
+}
+
+.prev:hover, .next:hover {
+  background: #fff;
+}
+
+/* МОДАЛКА (увеличение) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  border-radius: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+/* end carusel */
