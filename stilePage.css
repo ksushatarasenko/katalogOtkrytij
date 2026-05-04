@@ -9,7 +9,7 @@ h1 {
   text-align: center;
   padding: 20px;
   color: #2e7d32;
-  font-size: 32px;
+  font-size: 2rem;;
 }
 
 h3 {
@@ -166,6 +166,7 @@ h1, h3 {
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.3s;
+  touch-action: pan-y;
 }
 
 .carousel img:hover {
@@ -229,3 +230,75 @@ h1, h3 {
   cursor: pointer;
 }
 /* end carusel */
+
+/* 📱 МОБИЛЬНАЯ АДАПТАЦИЯ */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 22px;
+    padding: 15px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 17px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .two {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .text {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* 📸 Картинки */
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mgIcon {
+    width: 70px;
+    height: 70px;
+  }
+
+  /* 📸 КАРУСЕЛЬ */
+  .carousel img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .prev, .next {
+    font-size: 22px;
+    padding: 8px;
+  }
+
+  /* 🔘 Кнопка */
+  .back {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
