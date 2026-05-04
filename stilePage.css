@@ -231,77 +231,131 @@ h1, h3 {
 }
 /* end carusel */
 
-/* 📱 МОБИЛЬНАЯ АДАПТАЦИЯ */
+/* 📱 ГЛОБАЛЬНАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 768px) {
 
+  /* 🧱 БАЗА */
   body {
     font-size: 16px;
+    line-height: 1.5;
   }
 
-  h1 {
-    font-size: 28px;
-    padding: 15px;
-  }
+  /* 🔤 Заголовки */
+  h1 { font-size: 26px; padding: 10px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 18px; }
+  h6 { font-size: 16px; }
 
-  h3 {
-    font-size: 26px;
-  }
-
-  h4 {
-    font-size: 24px;
-  }
-
-  h5 {
-    font-size: 22px;
-  }
-
-  h6 {
-    font-size: 20px;
-  }
-
-  .container {
-    padding: 15px;
-    margin: 10px;
-  }
-
-  .two {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .text {
+  p {
     font-size: 18px;
-    padding: 10px;
   }
-  p{
-    font-size: 20px;
+
+  /* 📦 Контейнеры */
+  .container {
+    padding: 12px;
+    margin: 8px;
+  }
+
+  .text, .textBlock {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  /* 📐 FLEX → колонка */
+  .two, .flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* 🟩 Карточки */
+  .card {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+    min-height: auto;
+  }
+
+  .card h2 {
+    font-size: 18px;
+    margin-top: 10px;
   }
 
   /* 📸 Картинки */
-  .image img {
+  .image img,
+  .imgIcon img {
     width: 100%;
     height: auto;
   }
 
-  .mgIcon {
+  .imgIcon {
     width: 70px;
     height: 70px;
   }
 
-  /* 📸 КАРУСЕЛЬ */
+  .mgIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* 🎞 КАРУСЕЛЬ */
   .carousel img {
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
   }
 
   .prev, .next {
-    font-size: 22px;
-    padding: 8px;
+    font-size: 20px;
+    padding: 6px;
   }
 
-  /* 🔘 Кнопка */
+  /* 🎧 АУДИО (ВАЖНО!) */
+  .audio-block {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .audio-card {
+    width: 100%;
+    padding: 12px;
+  }
+
+  audio {
+    width: 100%;
+    height: 40px;
+  }
+
+  /* 🎥 ВИДЕО */
+  .video {
+    width: 100%;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* 📋 Списки */
+  ul, ol {
+    font-size: 16px;
+    margin-left: 15px;
+  }
+
+  li {
+    margin-left: 5%;
+  }
+
+  /* 🔘 Кнопки */
   .back {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  /* 👆 Удобство нажатия */
+  button, .card, .back {
+    min-height: 44px;
   }
 }
