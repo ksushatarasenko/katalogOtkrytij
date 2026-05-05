@@ -231,6 +231,28 @@ h1, h3 {
 }
 /* end carusel */
 
+.nest {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.nest-item {
+  background: #fff3cd;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.nest-item:hover {
+  transform: scale(1.05);
+  background: #ffe082;
+}
+
 /* 📱 ГЛОБАЛЬНАЯ МОБИЛЬНАЯ АДАПТАЦИЯ */
 @media (max-width: 768px) {
 
