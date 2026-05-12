@@ -54,7 +54,8 @@ p{
 
 /* Блок с картинкой и текстом */
 .two {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   /* flex-wrap: wrap; */
   align-items: center;
   gap: 20px;
