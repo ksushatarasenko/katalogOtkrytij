@@ -32,6 +32,15 @@ h6 {
   text-align: center;
   font-size: 22px;
 }
+p{
+  font-size: 20px;
+}
+.text p{
+  font-size: 20px;
+}
+.text ul{
+  font-size: 20px;
+}
 
 /* Контейнер */
 .container {
